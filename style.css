@@ -118,3 +118,49 @@ ul {
 ul li {
     margin-bottom: 5px;
 }
+
+/* Mobile View Optimization */
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+        align-items: flex-start; /* Better for long content on small screens */
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .card {
+        width: 100%; /* Spans full width of the phone */
+        padding: 20px;
+        margin-top: 40px; /* Gives some breathing room at the top */
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 22px; /* Scales down header for mobile */
+    }
+
+    .input-group {
+        flex-direction: column; /* Stack input and button for easier tapping */
+        gap: 10px;
+    }
+
+    input {
+        border-radius: 10px; /* Rounded corners for separate blocks */
+        width: 100%;
+    }
+
+    button {
+        border-radius: 10px; 
+        width: 100%;
+        padding: 14px; /* Larger hit area for fingers */
+    }
+
+    .stats {
+        flex-direction: column; /* Stack stat boxes */
+        gap: 10px;
+    }
+
+    .stat-box {
+        width: 100%;
+    }
+}
